@@ -12,7 +12,7 @@ body {
  height: 100vh;
 }
 .content-container{
-margin: 20px 30px;
+padding: 20px 30px;
 }
 .container {
  height: 400px;
@@ -29,6 +29,11 @@ margin: 20px 30px;
 .top-container > p {
  font-size: 10px;
  margin: 10px 0;
+
+}
+.top-container a {
+ text-decoration: none;
+ color: cornflowerblue;
 }
 .logo {
  width: 40%;
@@ -41,7 +46,7 @@ margin: 20px 30px;
   margin-bottom: 10px;
   font-size: 8px;
   width: 100%;
-  padding: 5PX 0;
+  padding: 5px 0 5px 5px;
  }
 
  .check-ctr {
@@ -61,7 +66,41 @@ margin: 20px 30px;
   background-color: cornflowerblue;
   border-radius: 3px;
   border: none;
-  padding: 5px;
+  padding: 6px 0;
   font-size: 8px;
   color: white;
+ }
+ .pw-forgot {
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+ }
+
+ .pw-forgot > a {
+  text-decoration: none;
+  font-size: 10px;
+  color: darkgray;
+  
+ }
+ 
+
+ @media only screen and (min-width: 500px) {
+  .container {
+   box-shadow: 5px 5px 20px -3px #D3D3D3;
+   height: 300px;
+  }
+ }
+
+ @media only screen and (min-width: 750px) {
+  .container {
+   width: 440px;
+   display: flex;
+  }
+  .content-container {
+   width: 50%;
+  }
+  .image-container {
+   width: 50%;
+   background:bottom / 100% url(https://images.unsplash.com/photo-1543060829-a0029874b174?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  }
  }
